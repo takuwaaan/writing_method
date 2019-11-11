@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 #coding:utf-8
 import cv2
 import numpy as np
@@ -12,9 +9,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from scipy.spatial import distance as dis
 
-
-# In[11]:
-
+########OpenCVで絵を記入＆出力#########
 
 #sx, syは線の始まりの位置
 sx, sy = 0, 0
@@ -69,9 +64,15 @@ while(1):
         print ("clear")
 
 
-# In[10]:
+########ファイルを一筆書きデータとして出力#########
 
+"""
+参考URL(というかまるまる全て）
+「もりとにーのブログ：画像を一筆書きで描くプログラムを実装した[Python,Processing]
+https://tony-mooori.blogspot.com/2016/02/pythonprocessing.html
+"""
 
+###以下コピペ###
 """
 参考URL
 [1] 蟻コロニー最適化 - Wikipedia https://ja.wikipedia.org/wiki/蟻コロニー最適化
@@ -229,11 +230,3 @@ if __name__=="__main__":
 	tsp.solve(100)
 	tsp.save("best_order.csv")
 	tsp.plot(tsp.result)
-	
-
-
-# In[ ]:
-
-
-
-
