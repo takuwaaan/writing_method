@@ -1,7 +1,5 @@
 import numpy as np
 np.set_printoptions(threshold=np.inf)
-#input_data = input("読み込む文字データ：")
-#data = np.load(input_data)
 data = np.load("a_test.npy")
 
 ###data準備###
@@ -29,3 +27,4 @@ for i in range(c):
     else:
         data_z_add[line][i][2] = 1
 print(data_z_add[line])
+#とりあえず出力を吐き出すだけ
